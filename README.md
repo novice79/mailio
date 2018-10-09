@@ -88,6 +88,8 @@ From the terminal go into the directory where the library is downloaded to, and 
 mkdir build
 cd ./build
 cmake ..
+or if use vcpkg
+cmake -DCMAKE_INSTALL_PREFIX=../dist -DCMAKE_TOOLCHAIN_FILE="/data/vcpkg/scripts/buildsystems/vcpkg.cmake" ..
 make
 ```
 Both static and dynamic libraries should be built.
